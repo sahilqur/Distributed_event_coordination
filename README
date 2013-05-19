@@ -1,0 +1,43 @@
+-> Type make in the terminal 
+-> This will create two executable files called "client" and "server"
+-> For running Client :-
+   -> Type ./dec_client in one terminal 
+   -> diffrent switch for client program are:-
+       dec_client [−h] [-s port-number] [−p file]
+      -h     printing usage summary (type ./client -h 1)
+      -s     connect to a specified host, default is localhost.
+      -p     port no. , default is 9090
+   Ex:-
+   ./dec_client -p 2000 -s timberlake.cse.buffalo.edu
+   insert A->B;
+   INSERT DONE
+ 
+
+   insert B->C;Query A B;
+   INSERT DONE
+   Event A happened before Event B
+
+
+-> For running Server :-
+   -> Type ./dec_server in anathor terminal 
+   -> different switches for server program are:-
+      dec_server [−h] [-p port-number] [−i file]
+      -h  			print usage summary and exit
+      -p portno.		port number. Default is 9090  
+      -i input file 	        log all request to a given file. Default is stdout
+   Ex:- dec_server -p 2000
+        dec_server waiting for Client
+        New connection from 127.0.0.1 on port 3456
+        
+        dec_server$: Insert A->B;query A B;
+
+        dec_server$: INSERT DONE
+
+        dec_SERVER$: Event A happened before Event B
+
+
+
+
+
+   
+
